@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="ch.raly.stu3-bug" />
+  <url value="http://raly.ch/ig/stu3-bug/ImplementationGuide/ch.raly.stu3-bug" />
+  <version value="1.0.18" />
+  <name value="RALY_STU3_BUG" />
+  <title value="RALY STU3 BUG (STU3)" />
+  <status value="draft" />
+  <date value="2022-11-22" />
+  <publisher value="RALY GmbH" />
+  <contact>
+    <name value="RALY GmbH" />
+    <telecom>
+      <system value="url" />
+      <value value="https://www.raly.ch" />
+    </telecom>
+  </contact>
+  <description value="Implementation Guide to test publisher with STU3" />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+      <code value="CH" />
+    </coding>
+  </jurisdiction>
+  <copyright value="CC-BY-SA-4.0" />
+  <packageId value="ch.raly.stu3-bug" />
+  <license value="CC-BY-SA-4.0" />
+  <fhirVersion value="3.0.2" />
+
+
+  <definition>
+
+    <!-- References to examples -->
+
+    <!-- ///////////// BUNDLE ////////////////// -->
+    <resource>
+      <reference>
+        <reference value="Bundle/0-1-Bundle-FindAll-Response" />
+      </reference>
+      <name value="0.1 Bundle find all Documents" />
+      <description value="Example of Bundle for search documents response" />
+    </resource>
+
+    <!-- ///////////// PATIENT ////////////////// -->
+
+    <resource>
+      <reference>
+        <reference value="Patient/173c42bd-e77a-412c-a03b-87c7bdfa266d" />
+      </reference>
+      <name value="5.2 Patient" />
+      <description value="Example of patient" />
+      <exampleBoolean value="false" />
+    </resource>
+
+    <!-- ///////////// PRACTITIONER ////////////////// -->
+
+    <resource>
+      <reference>
+        <reference value="Practitioner/6-1-Practitioner-HCP" />
+      </reference>
+      <name value="6.1 Practitioner as HCP" />
+      <description value="Example of practitioner in role of HCP." />
+      <exampleCanonical value="http://hin.ch/ig/hin-adc/StructureDefinition/hin-adc-practitioner" />
+    </resource>
+
+
+    <!-- ///////////// PAGES ////////////////// -->
+
+    <!-- pages -->
+    <page>
+      <nameUrl value="toc.html" />
+      <title value="Table of Contents" />
+      <generation value="html" />
+      <page>
+        <nameUrl value="index.html" />
+        <title value="Home" />
+        <generation value="markdown" />
+      </page>
+
+      <page>
+        <nameUrl value="profiles.html" />
+        <title value="Profiles" />
+        <generation value="html" />
+      </page>
+
+    </page>
+
+
+
+    <!-- ///////////// PARAMETERS ////////////////// -->
+    <!-- parameters -->
+    <parameter>
+      <code value="releaselabel" />
+      <!-- <value value="release" /> -->
+      <value value="ci-build" />
+    </parameter>
+    <parameter>
+      <code value="path-pages" />
+      <value value="input/pages" />
+    </parameter>
+    <parameter>
+      <code value="copyrightyear" />
+      <value value="2021+" />
+    </parameter>
+  </definition>
+</ImplementationGuide>

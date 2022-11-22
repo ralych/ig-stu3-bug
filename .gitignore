@@ -1,0 +1,9 @@
+.project
+.settings
+ig.ini.old
+
+input-cache
+output
+temp
+template
+
