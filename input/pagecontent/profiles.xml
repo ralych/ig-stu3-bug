@@ -4,5 +4,4 @@
 	
 	The list of profiles defined by this IG can be seen in the list below.
 	
-	<div> {% include list-profiles.xhtml %} </div>
 </div>
