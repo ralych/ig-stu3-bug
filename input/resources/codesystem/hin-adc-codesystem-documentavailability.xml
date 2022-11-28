@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+	<id value="hin-adc-codesystem-documentavailability" />
+	<url
+		value="http://hin.ch/ig/hin-adc/CodeSystem/hin-adc-codesystem-documentavailability" />
+	<version value="0.1.0" />
+	<name value="ADSCOCodesystemDocumentAvailability" />
+	<title value="AD Swiss Connector CodeSystem Document Availability" />
+	<status value="draft" />
+	<date value="2020-07-29T00:00:00+10:00" />
+	<publisher value="eHealth Suisse" />
+	<contact>
+		<name value="eHealth Suisse" />
+		<telecom>
+			<system value="url" />
+			<value value="https://www.e-health-suisse.ch" />
+		</telecom>
+	</contact>
+	<description
+		value="Additional metadata about document availability on the DocumentReference" />
+	<content value="complete" />
+	<concept>
+		<code value="Online" />
+		<definition
+			value="Document is online available." />
+	</concept>
+	<concept>
+		<code value="Offline" />
+		<definition
+			value="Document is offline and not online available." />
+	</concept>
+</CodeSystem>

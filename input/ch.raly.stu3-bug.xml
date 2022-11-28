@@ -64,6 +64,17 @@
     </resource>
 
 
+    <!-- ///////////// CODESYSTEM ////////////////// -->
+
+    <!-- References to code systems -->
+    <resource>
+      <reference>
+        <reference value="CodeSystem/hin-adc-codesystem-documentavailability" />
+      </reference>
+      <exampleBoolean value="false" />
+    </resource>
+
+
     <!-- ///////////// PAGES ////////////////// -->
 
     <!-- pages -->
